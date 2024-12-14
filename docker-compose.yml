@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  telugu-speech-app:
+    build:
+      context: .  # Path to your Dockerfile
+      dockerfile: dockerfile
+    ports:
+      - "8000:8000"  # Map host port 8000 to container port 8000
+    volumes:
+      - .:/app  # Mount current directory to container /app
+    environment:
+      - ENV=production
