@@ -4,7 +4,7 @@ services:
   telugu-speech-app:
     build:
       context: .  # Path to your Dockerfile
-      dockerfile: dockerfile
+      dockerfile: docker/dockerfile
     ports:
       - "8000:8000"  # Map host port 8000 to container port 8000
     volumes:
